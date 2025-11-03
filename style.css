@@ -20,6 +20,8 @@ header {
 nav ul { list-style: none; display: flex; }
 nav ul li { margin-left: 20px; }
 nav ul li a { color: #fff; text-decoration: none; }
+footer p a { color: #fff; text-decoration: none; }
+#about p a { color: #000; text-decoration: none; }
 
 .hero {
     background: #302929;
