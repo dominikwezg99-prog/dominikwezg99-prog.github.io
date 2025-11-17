@@ -1,0 +1,41 @@
+# Plik robots.txt dla strony Astronomia
+# Blokowanie wyszukiwarek przed indeksowaniem prywatnych sekcji
+
+# Zezwolenie na indeksowanie wszystkich publicznych treści
+User-agent: *
+Disallow: /sekcja_prywatna/      # Zablokowanie dostępu do prywatnych zasobów
+Disallow: /admin/                 # Zablokowanie dostępu do panelu administracyjnego
+Disallow: /kosmiczne_tajniki/     # Zablokowanie dostępu do sekcji "kosmiczne_tajniki"
+
+# Pozwolenie na indeksowanie bloga i stron artykułów
+Allow: /blog/                    # Zezwolenie na dostęp do bloga
+Allow: /blog/nowosci/             # Zezwolenie na dostęp do strony z nowinkami
+
+# Blokowanie zasobów multimedialnych
+Disallow: /img/                  # Zablokowanie indeksowania katalogu obrazów
+
+# Zezwolenie na dostęp do mapy nieba (mapa półkuli)
+Allow: /mapa-nieba/              # Zezwolenie na dostęp do mapy nieba
+
+# Zablokowanie dostępu do plików zewnętrznych i nieistotnych dla SEO
+Disallow: /pdf/                  # Zablokowanie dostępu do plików PDF
+Disallow: /files/                # Zablokowanie dostępu do ogólnych plików
+
+# Blokowanie dostępu do strony kontaktowej
+Disallow: /kontakt/               # Blokowanie strony kontaktowej od indeksacji
+
+# Dodatkowe zasady dla Googlebot (robot Google'a)
+User-agent: Googlebot
+Disallow: /sekcja_prywatna/      # Googlebot nie powinien indeksować sekcji prywatnych
+Allow: /blog/                    # Googlebot może indeksować artykuły na blogu
+
+# Dodatkowe zasady dla Bingbot (robot Bing'a)
+User-agent: Bingbot
+Disallow: /private/              # Zablokowanie Bingbot przed indeksowaniem sekcji prywatnych
+
+# Zezwolenie na dostęp do mapy witryny
+Sitemap: https://dominikwezg99-prog.github.io/sitemap.xml
+
+# Zablokowanie niektórych robotów spamujących
+User-agent: BadBot
+Disallow: /
