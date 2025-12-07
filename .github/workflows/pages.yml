@@ -23,8 +23,10 @@ jobs:
           path: ./   # folder z plikami strony (index.html itd.)
 
   deploy:
-    needs: build
+    environment:
+      name: github-pages    # ← TO JEST NAJWAŻNIEJSZE, JEST OK
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
