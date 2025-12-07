@@ -39,11 +39,11 @@ footer p a { color: #fff; text-decoration: none; }
 }
 .hero h2 { font-size: 32px; margin-bottom: 20px; }
 
-.about, .newsletter, .facts, .services, .blog, .portfolio, .contact .blog-article {
+.about, .newsletter, .facts, .services, .blog, .portfolio, .contact {
     padding: 20px 20px;
 }
 
-.services .service, .blog article, .portfolio .project {
+.services .service, .blog-article, .portfolio .project {
     border: 1px solid #eee;
     padding: 20px;
     margin: 10px 0;
@@ -113,5 +113,6 @@ main{
 .social-share a:hover {
   color: #000;
 }
+
 
 
