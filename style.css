@@ -46,7 +46,7 @@ footer p a { color: #fff; text-decoration: none; }
 .services .service, .blog-article, .portfolio .project {
     border: 1px solid #eee;
     padding: 20px;
-    margin: 10px 0;
+    margin: auto;
     border-radius: 6px;
 }
 
@@ -113,6 +113,7 @@ main{
 .social-share a:hover {
   color: #000;
 }
+
 
 
 
